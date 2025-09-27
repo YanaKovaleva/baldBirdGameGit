@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://d3spuf2mgivav"]
+[gd_scene load_steps=8 format=3 uid="uid://bc2srpxbc5bgc"]
 
+[ext_resource type="Script" uid="uid://crxelj3noaog5" path="res://character_body_2d.gd" id="1_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://d2au6p4l3uq6v" path="res://flyRightUp.png" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://bwlwkhohc1h3e" path="res://flyRightDown.png" id="2_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://cheb7b4o6nha6" path="res://blueShrub rm.png" id="3_lquwl"]
@@ -40,11 +41,13 @@ offset_bottom = 1786.0
 color = Color(0.797995, 0.951978, 0.97601, 1)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Node2D"]
+script = ExtResource("1_1bvp3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D/CharacterBody2D"]
 position = Vector2(157, 496)
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_7mycd")
+autoplay = "default"
 frame_progress = 0.0615409
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/CharacterBody2D"]
