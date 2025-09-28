@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by5kpj3eytpgf"
-path="res://.godot/imported/feather rm.png-eb2da762e3c9f958fc54eebfbd6d7669.ctex"
+uid="uid://d2au6p4l3uq6v"
+path="res://.godot/imported/flyRightUp.png-b97a8a1c990a919a9f385a3127fb3078.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bird/feather rm.png"
-dest_files=["res://.godot/imported/feather rm.png-eb2da762e3c9f958fc54eebfbd6d7669.ctex"]
+source_file="res://bird/flyRightUp.png"
+dest_files=["res://.godot/imported/flyRightUp.png-b97a8a1c990a919a9f385a3127fb3078.ctex"]
 
 [params]
 
