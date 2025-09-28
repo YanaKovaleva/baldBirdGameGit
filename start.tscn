@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://c15cyn61tdttb"]
+
+[ext_resource type="Script" uid="uid://dgby74gsjn8ii" path="res://start.gd" id="1_4a3qj"]
+[ext_resource type="Texture2D" uid="uid://blv4258kyg533" path="res://startBackground.jpeg" id="2_g38d0"]
+[ext_resource type="Texture2D" uid="uid://im7b2iisc5w8" path="res://startText.jpg" id="3_pob1m"]
+[ext_resource type="Texture2D" uid="uid://dnd7r8qittnmx" path="res://startKeys.jpg" id="4_gophc"]
+[ext_resource type="Texture2D" uid="uid://emg6ocdg3ly5" path="res://startBtnsmol.png" id="5_p0nl4"]
+[ext_resource type="Script" uid="uid://cmbecuvqrklxy" path="res://start_button.gd" id="6_da165"]
+[ext_resource type="Texture2D" uid="uid://dcmbi0om8dy60" path="res://bird/bird rm.png" id="7_g38d0"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4a3qj")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = -105.0
+offset_right = 1158.0
+offset_bottom = 715.0
+texture = ExtResource("2_g38d0")
+
+[node name="startText" type="Sprite2D" parent="."]
+position = Vector2(540, 178)
+scale = Vector2(0.769737, 0.732558)
+texture = ExtResource("3_pob1m")
+
+[node name="startKeys" type="Sprite2D" parent="."]
+position = Vector2(530, 612)
+scale = Vector2(0.742733, 0.613636)
+texture = ExtResource("4_gophc")
+
+[node name="startButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 317.0
+offset_right = 1181.0
+offset_bottom = 599.0
+scale = Vector2(1.09097, 0.857733)
+icon = ExtResource("5_p0nl4")
+flat = true
+script = ExtResource("6_da165")
+
+[node name="bord" type="Sprite2D" parent="."]
+position = Vector2(367, 349)
+scale = Vector2(0.292435, 0.323053)
+texture = ExtResource("7_g38d0")
+
+[connection signal="pressed" from="startButton" to="startButton" method="_on_pressed"]
