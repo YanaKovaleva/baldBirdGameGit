@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvgmj7hqyhpa3"
-path="res://.godot/imported/endWarning.jpg-519b6d94616df0bba2f41a5dbcf75af3.ctex"
+uid="uid://cvpyhydfxkfw0"
+path="res://.godot/imported/buttonRed.jpg-0815e15548f0bd10c9423d2725e098b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scripts/endWarning.jpg"
-dest_files=["res://.godot/imported/endWarning.jpg-519b6d94616df0bba2f41a5dbcf75af3.ctex"]
+source_file="res://scripts/buttonRed.jpg"
+dest_files=["res://.godot/imported/buttonRed.jpg-0815e15548f0bd10c9423d2725e098b5.ctex"]
 
 [params]
 
