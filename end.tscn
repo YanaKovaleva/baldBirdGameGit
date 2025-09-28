@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://613fpv2walow"]
+
+[ext_resource type="Texture2D" uid="uid://blv4258kyg533" path="res://startBackground.jpeg" id="1_egc6y"]
+[ext_resource type="Texture2D" uid="uid://c4cqvrvloi8tv" path="res://bardBird rm.png" id="2_lt2ag"]
+[ext_resource type="Texture2D" uid="uid://d1af14qc8f7wg" path="res://birdEndText.jpg" id="3_75yvt"]
+[ext_resource type="AudioStream" uid="uid://dot2ui5x1oo5b" path="res://levelTexts/rickroll.ogg" id="4_jclhh"]
+[ext_resource type="Texture2D" uid="uid://diohvod8f817i" path="res://endWarning.jpg" id="5_jclhh"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.02552, 0.796125)
+texture = ExtResource("1_egc6y")
+
+[node name="baldBird" type="Sprite2D" parent="."]
+position = Vector2(540, 449)
+scale = Vector2(0.772515, 0.708114)
+texture = ExtResource("2_lt2ag")
+
+[node name="birdText" type="Sprite2D" parent="."]
+position = Vector2(823, 254)
+scale = Vector2(0.611413, 1)
+texture = ExtResource("3_75yvt")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_jclhh")
+volume_db = 5.0
+autoplay = true
+parameters/looping = true
+
+[node name="endText" type="Sprite2D" parent="."]
+position = Vector2(535, 91)
+scale = Vector2(0.674999, 0.812377)
+texture = ExtResource("5_jclhh")
